@@ -17,8 +17,8 @@ public class LegumeResourceTest {
           .when().get("/legumes")
           .then()
              .statusCode(200)
-             .body("$.size()", is(4),
-                     "name", containsInAnyOrder("Carrot", "Zucchini", "Kidney Bean", "Black Bean"),
-                     "description", containsInAnyOrder("Root vegetable, usually orange", "Summer squash", "Dark coloured bean", "Dark red bean"));
+             .body("$.size()", is(2),
+                     "name", containsInAnyOrder("Carrot", "Zucchini"),
+                     "description", containsInAnyOrder("Root vegetable, usually orange", "Summer squash"));
     }
 }

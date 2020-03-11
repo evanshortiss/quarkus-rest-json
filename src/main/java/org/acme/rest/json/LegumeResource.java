@@ -21,8 +21,6 @@ public class LegumeResource {
     public LegumeResource() {
         legumes.add(new Legume("Carrot", "Root vegetable, usually orange"));
         legumes.add(new Legume("Zucchini", "Summer squash"));
-        legumes.add(new Legume("Kidney Bean", "Dark red bean"));
-        legumes.add(new Legume("Black Bean", "Dark coloured bean"));
     }
 
     @GET
